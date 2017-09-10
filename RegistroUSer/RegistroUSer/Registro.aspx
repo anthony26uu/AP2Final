@@ -44,8 +44,10 @@
         </p>
         <p style="margin-left: 40px">
           <span class="label label-primary">Tipo Usuario</span>&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox13" runat="server" style="margin-left: 70px" Width="109px"></asp:TextBox>
-             </p>
+            <asp:TextBox  ID="TextBox13" runat="server"  style="margin-left: 70px" Width="109px">-Selecione-</asp:TextBox>
+             <select id="Select1" name="D1">
+                 <option></option>
+            </select></p>
         <p style="margin-left: 40px">
           <span class="label label-primary">Nombre   Usuario   </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="TextBox9" runat="server" style="margin-left: 26px" Width="109px"></asp:TextBox>
