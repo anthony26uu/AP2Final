@@ -3,61 +3,69 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <style type="text/css">
+        #country {
+            width: 123px;
+        }
+    </style>
 </head>
 <body style="height: 558px">
     <form id="form1" runat="server">
         <asp:Image ID="Image1" runat="server" Height="73px" ImageUrl="~/usuario_318-10541.jpg" Width="88px" />
-        <asp:Image ID="Image2" runat="server" Height="80px" ImageUrl="~/logo-elalmacen.png" Width="216px" />
-        <div>
-            <p style="margin-left: 160px; width: 129px; margin-right: 0px;">
-                &nbsp;&nbsp;
-                <asp:Label ID="Label3" runat="server" BackColor="White" BorderStyle="Solid" Text="Registro Usuario" Width="113px"></asp:Label>
-            </p>
+        <asp:Image ID="Image2" runat="server" Height="80px" ImageUrl="~/logo-elalmacen.png" Width="216px" ForeColor="#0099FF" />
+        <div style="margin-left: 160px">
+            <h2> <span class="label label-default">Registro</span></h2>
+           
+        
         </div>
         <p style="margin-left: 40px">
-            &nbsp;<asp:Label ID="Label2" runat="server" Text="ID Usuario"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-            <asp:TextBox ID="TextBox8" runat="server" style="margin-left: 16px" Width="58px"></asp:TextBox>
-            <asp:Button ID="Button1" runat="server" BorderStyle="Outset" OnClick="Button1_Click" Text="Buscar" Width="51px" />
+            <span class="label label-primary">Id Usuario</span>
+           
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="TextBox8" runat="server" style="margin-left: 43px" Width="58px"></asp:TextBox>
+          <button type="button" class="btn btn-primary">Buscar</button>
+          
         </p>
         <p style="margin-left: 40px">
-            <asp:Label ID="Label4" runat="server" Text="Nombres"></asp:Label>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <asp:TextBox ID="TextBox5" runat="server" style="margin-left: 0px" Width="115px"></asp:TextBox>
+           <span class="label label-primary">Nombres</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+            <asp:TextBox ID="TextBox12" runat="server" style="margin-left: 18px" Width="109px"></asp:TextBox>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </p>
         <p style="margin-left: 40px">
-            <asp:Label ID="Label5" runat="server" Text="Apellidos"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox6" runat="server" style="margin-left: 4px" Width="116px"></asp:TextBox>
+            <span class="label label-primary">Apellidos</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <asp:TextBox ID="TextBox11" runat="server" style="margin-left: 25px" Width="109px"></asp:TextBox>
         </p>
         <p style="margin-left: 40px">
-            Tipo Usuario&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:ListBox ID="ListBox1" runat="server" Height="39px" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged" Width="115px">
-                <asp:ListItem>Administrador</asp:ListItem>
-                <asp:ListItem>Empleado</asp:ListItem>
-            </asp:ListBox>
+          <span class="label label-primary">Tipo Usuario</span>&nbsp;&nbsp;
+            <asp:TextBox ID="TextBox13" runat="server" style="margin-left: 70px" Width="109px"></asp:TextBox>
+             </p>
+        <p style="margin-left: 40px">
+          <span class="label label-primary">Nombre   Usuario   </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextBox9" runat="server" style="margin-left: 26px" Width="109px"></asp:TextBox>
         </p>
         <p style="margin-left: 40px">
-            Nombre usuario&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox2" runat="server" Width="107px"></asp:TextBox>
+            <span class="label label-primary">Contraseña</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextBox3" runat="server" style="margin-left: 13px" Width="109px"></asp:TextBox>
         </p>
         <p style="margin-left: 40px">
-            Contraseña&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox3" runat="server" style="margin-left: 0px" Width="109px"></asp:TextBox>
-        </p>
-        <p style="margin-left: 40px">
-            Confirmar Contraseña&nbsp;
-            <asp:TextBox ID="TextBox4" runat="server" Width="109px"></asp:TextBox>
+           <span class="label label-primary">Confirma Contraseña</span>
+&nbsp;
+            <asp:TextBox ID="TextBox10" runat="server" style="margin-left: 27px" Width="110px"></asp:TextBox>
             <br />
         </p>
         <p style="margin-left: 40px">
-            <asp:Button ID="Button2" runat="server" BorderStyle="Outset" OnClick="Button1_Click" Text="Nuevo" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button3" runat="server" BorderStyle="Outset" OnClick="Button1_Click" Text="Guardar" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button4" runat="server" BorderStyle="Outset" OnClick="Button1_Click" Text="Eliminar" />
+           <button type="button" class="btn btn-primary">Nuevo</button>
+           <button type="button" class="btn btn-primary">Guardar </button>
+           <button type="button" class="btn btn-primary">Eliminar</button>
+
         </p>
     </form>
 </body>
