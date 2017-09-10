@@ -71,9 +71,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="find-file.ico" />
     <Content Include="Global.asax" />
+    <Content Include="iconos-para-prestamos_credixpress-05.png" />
+    <Content Include="logo-elalmacen.png" />
+    <Content Include="logo.png" />
+    <Content Include="Product_96px.png" />
     <Content Include="Registro Usuario.aspx" />
     <Content Include="Registro.aspx" />
+    <Content Include="usuario_318-10541.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
