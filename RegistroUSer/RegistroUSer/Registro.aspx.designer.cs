@@ -67,15 +67,6 @@ namespace RegistroUSer {
         protected global::System.Web.UI.WebControls.TextBox TextBox11;
         
         /// <summary>
-        /// Control TextBox13.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox13;
-        
-        /// <summary>
         /// Control TextBox9.
         /// </summary>
         /// <remarks>
